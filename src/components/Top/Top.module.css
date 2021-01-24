@@ -1,0 +1,140 @@
+.container {
+  margin: 0 auto;
+  max-width: 630px;
+  padding: 16px 12px 200px;
+  background: #1B1F2C;
+  color: #37ECF5;
+  font-family: 'Arial';
+}
+
+.content {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.season {
+  position: relative;
+}
+
+.seasonBackground {
+  width: 100%;
+  display: block;
+}
+
+.seasonContentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding: 10px;
+}
+
+.energyIcon {
+  width: 13%;
+}
+
+.seasonHeading {
+  margin: 0;
+  font-weight: normal;
+  font-size: 34px;
+  text-shadow: 0px 0px 5px rgba(55, 236, 245, 0.33);
+}
+
+.seasonTimeLeftIncription {
+  margin: 0;
+  margin-top: calc(-50px + 13%);
+  font-size: 20px;
+  text-shadow: 0px 0px 5px rgba(55, 236, 245, 0.33);
+}
+
+.seasonTimeLeft {
+  margin: 0;
+  margin-top: calc(-20px + 5%);
+  font-size: 20px;
+  color: #D34E57;
+  text-shadow: 0px 0px 5px #D34E57;
+}
+
+.prize {
+  position: relative;
+}
+
+.prizeBackground {
+  width: 100%;
+  display: block;
+}
+
+.prizeContentWrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.currentPrizeIncription {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+  font-size: 22px;
+}
+
+.stonksIcon {
+  margin-right: 5px;
+}
+
+.distributionIncription {
+  margin: 0;
+  margin-top: 10px;
+  padding-left: 7%;
+  font-size: 16px;
+}
+
+.distributionIncriptionTime {
+  color: #D34E57;
+  text-shadow: 0px 0px 5px #D34E57;
+}
+
+@media (max-width: 500px) {
+  .seasonHeading {
+    font-size: 24px;
+  }
+  
+  .seasonTimeLeftIncription {
+    margin-top: calc(-35px + 13%);
+    font-size: 14px;
+  }
+  
+  .seasonTimeLeft {
+    margin-top: calc(-15px + 5%);
+    font-size: 14px;
+  }
+
+  .currentPrizeIncription {
+    font-size: 18px;
+  }
+
+  .distributionIncription {
+    margin-top: 0;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 370px) {
+  .currentPrizeIncription {
+    font-size: 16px;
+  }
+
+  .stonksIcon {
+    width: 20px;
+    margin-right: 0;
+  }
+}
+
+body {
+  padding-bottom: 1000px;
+}

@@ -1,0 +1,85 @@
+.container {
+  margin: 0 auto;
+  max-width: 630px;
+  padding: 16px 12px 200px;
+  background: #1B1F2C;
+  color: #37ECF5;
+  font-family: 'Arial';
+}
+
+.heading {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+  text-shadow: 0px 0px 5px rgba(55, 236, 245, 0.33);
+  text-transform: uppercase;
+  column-gap: 6px;
+}
+
+.backButton {
+	background: transparent;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	transition: 0.2s
+}
+
+.backButton:hover {
+	transform: scale(1.05);
+}
+
+.backButtonIcon {
+	width: 44px;
+	height: 40px;
+}
+
+.operationsWrapper {
+  margin-top: 35px;
+  padding-left: 17px;
+}
+
+.operationsHeading {
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+  text-shadow: 0px 0px 5px rgba(55, 236, 245, 0.33);
+}
+
+.operation {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.operationInfo {
+  margin-left: 12px;
+}
+
+.operationInfoRow {
+  line-height: 19px;
+}
+
+.redText {
+  color: #D34E57;
+}
+
+@media (max-width: 500px) {
+	.heading {
+		font-size: 20px;
+	}
+
+	.backButtonIcon {
+		width: 33px;
+		height: 30px;
+	}
+}
+
+@media (max-width: 380px) {
+	.operationInfoRow {
+    font-size: 12px;
+  }
+}

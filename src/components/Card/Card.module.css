@@ -1,0 +1,642 @@
+.card {
+  margin: 20px auto 0;
+  max-width: 630px;
+  padding: 16px 12px 85px;
+  background: #1B1F2C;
+  color: #37ECF5;
+  font-family: 'Arial';
+  text-shadow: 0px 0px 5px rgba(55, 236, 245, 0.33);
+}
+
+.content {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.heading {
+  margin: 0;
+  padding-left: 13px;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 33px;
+  text-shadow: 0px 0px 5px rgba(55, 236, 245, 0.33);
+}
+
+.profile {
+  margin-top: 13px;
+  position: relative;
+}
+
+.profileBackground {
+  width: 100%;
+  display: block;
+}
+
+.profileDataWrapper {
+  padding: 5%;
+  display: flex;
+}
+
+.avatar {
+  position: relative;
+  height: 23vw;
+  width: 23vw;
+  max-height: 105px;
+  max-width: 105px;
+  background-size: cover;
+  background-position: center;
+  border: 3px solid #D34E57;
+}
+
+.avatar:before {
+  content: '';
+  height: 11px;
+  width: 20px;
+  position: absolute;
+  top: -6px;
+  right: -9px;
+  border-bottom: 3px solid #D34E57;
+  background: #1B1F2C;
+  transform: rotate(45deg);
+}
+
+.avatar:after {
+  content: '';
+  height: 10px;
+  width: 20px;
+  position: absolute;
+  bottom: -4px;
+  left: -9px;
+  border-top: 3px solid #D34E57;
+  background: #1B1F2C;
+  transform: rotate(45deg);
+}
+
+.profileData {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.profileDataBalance {
+  display: flex;
+  padding-top: 5%;
+}
+
+.profileDataBalance__leftColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profileDataBalance__rightColumn {
+  padding-right: 20px;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.energy {
+  display: flex;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.energyIcon {
+  display: block;
+}
+
+.usdeur {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.usdeur:before {
+  content: '€$';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  margin-right: 8px;
+  border-radius: 50%;
+  border: 2px solid #37ECF5;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.rub {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.rub:before {
+  content: '₽';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 2px solid #37ECF5;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.withdrawButton {
+  display: block;
+  max-width: 300px;
+  margin: 20px auto 0;
+  width: 100%;
+  position: relative;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.withdrawButtonBackground {
+  width: 100%;
+  display: block;
+}
+
+.withdrawButtonContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  color: #37ECF5;
+}
+
+.watchAd {
+  margin-top: -3%;
+  position: relative;
+}
+
+.watchAd:after {
+  content: '';
+  height: 2px;
+  width: 20%;
+  position: absolute;
+  top: 18%;
+  left: 6%;
+  background: #37ECF5;
+}
+
+.watchAdBackground {
+  width: 100%;
+  display: block;
+}
+
+.watchAdContainer {
+  padding-top: 10%;
+  padding-left: 6%;
+  display: flex;
+}
+
+.watchAdHeading {
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+}
+
+.watchAd__bonuses {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 4%;
+}
+
+.watchAd__usdeur {
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
+  border-right: 1px solid #3C404F;
+}
+
+.watchAd__rub {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.watchAd__usdeur:after {
+  content: '€$';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 14px;
+  width: 14px;
+  margin-left: 4px;
+  border-radius: 50%;
+  border: 2px solid #37ECF5;
+  font-size: 11px;
+}
+
+.watchAd__rub:after {
+  content: '₽';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 4px;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  border: 2px solid #37ECF5;
+  font-size: 11px;
+}
+
+.watchAd__rightColumn {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.watchAd__buttonWrapper {
+  padding-left: 50px;
+  border-left: 1px solid #3C404F;
+}
+
+.watchAdButton {
+  padding: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.watchAdButtonIcon {
+  height: 70px;
+  width: 70px;
+}
+
+.corporation {
+  margin-top: 5px;
+  position: relative;
+}
+
+.corporation > .content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.corporationBackground {
+  width: 97%;
+  display: block;
+  margin-left: auto;
+}
+
+.corporationHeading {
+  position: relative;
+  margin: 0;
+  font-weight: normal;
+  font-size: 40px;
+}
+
+.corporationHeading::before {
+  content: '';
+  height: 64px;
+  width: 64px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -70px;
+  background: url('./images/icons/house.svg') center / 100%;
+}
+
+.corporationDescription {
+  display: block;
+  margin-top: -4px;
+  font-size: 20px;
+  color: #545E7E;
+  text-shadow: none;
+}
+
+.corporationButton {
+  margin: 0 12%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.advertise {
+  margin-top: 5px;
+  position: relative;
+}
+
+.advertiseBackground {
+  width: 100%;
+  display: block;
+}
+
+.advertiseCheckboxLabel {
+  position: absolute;
+  top: 13%;
+  right: 4.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.advertiseText {
+  font-size: 18px;
+  margin-top: -1px;
+  margin-right: 10px;
+}
+
+.advertiseCheckbox {
+  visibility: hidden;
+  position: absolute;
+}
+
+.advertiseCheckbox:checked ~ .advertiseCheckboxIcon {
+  background: #D34E57;
+}
+
+.advertiseCheckboxIcon {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #D34E57;
+  box-shadow: 0px 0px 5px #D34E57;
+  transition: 0.1s;
+}
+
+.transfers {
+  margin-top: 5px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3%;
+}
+
+.transfersButton {
+  display: block;
+  position: relative;
+  margin-top: 5%;
+  padding: 0;
+  width: 50%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.transfersButtonText {
+  position: relative;
+  transform: translateX(15px);
+}
+
+.transfersButtonText::before {
+  content: '';
+  display: block;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 50%;
+  left: -45px;
+  transform: translateY(-45%);
+  background: url('./images/icons/transfers.svg') center / 100%;
+}
+
+.transfersButton > .content,
+.withdrawalsButton > .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #37ECF5;
+  text-shadow: 0px 0px 5px rgba(55, 236, 245, 0.33);
+}
+
+.transfersButtonBackground {
+  width: 100%;
+  display: block;
+}
+
+.transfersButtonSeparator {
+  height: 7px;
+  width: 7px;
+  flex-shrink: 0;
+  align-self: center;
+  margin-top: 3%;
+  margin-left: -0.3%;
+  background: #D34E57;
+  box-shadow: 0px 0px 5px #D34E57;
+  transform: rotate(45deg);
+}
+
+.withdrawalsButton {
+  display: block;
+  position: relative;
+  padding: 0;
+  width: 50%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.withdrawalsButtonText {
+  position: relative;
+  transform: translateX(15px);
+}
+
+.withdrawalsButtonText::before {
+  content: '';
+  display: block;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 50%;
+  left: -45px;
+  transform: translateY(-45%);
+  background: url('./images/icons/withdrawals.svg') center / 100%;
+}
+
+.withdrawalsButtonBackground {
+  width: 100%;
+  display: block;
+}
+
+@media (max-width: 560px) {
+  .heading {
+    font-size: 24px;
+  }
+
+  .name {
+    font-size: 18px;
+  }
+
+  .usdeur,
+  .rub {
+    font-size: 20px;
+  }
+
+  .withdrawButton {
+    margin: 10px auto 0;
+  }
+
+  .withdrawButtonContent {
+    font-size: 14px;
+  }
+
+  .watchAdHeading {
+    font-size: 22px;
+  }
+
+  .watchAd__buttonWrapper {
+    padding-left: 30px;
+  }
+
+  .watchAdButtonIcon {
+    height: auto;
+    width: auto;
+  }
+
+  .corporationHeading {
+    font-size: 30px;
+  }
+
+  .corporationHeading::before {
+    height: 48px;
+    width: 48px;
+    left: -55px;
+  }
+  
+  .corporationDescription {
+    font-size: 16px;
+  }
+
+  .advertiseText {
+    font-size: 14px;
+  }
+  
+  .advertiseCheckboxIcon {
+    width: 8px;
+    height: 8px;
+  }
+
+  .transfersButtonText::before,
+  .withdrawalsButtonText::before {
+    height: 32px;
+    width: 32px;
+    left: -35px;
+  }
+  
+  .transfersButton > .content,
+  .withdrawalsButton > .content {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 400px) {
+  .energy {
+    font-size: 24px;
+  }
+
+  .energyIcon {
+    height: 28px;
+  }
+
+  .usdeur {
+    font-size: 16px;
+  }
+
+  .usdeur:before {
+    height: 15px;
+    width: 15px;
+    font-size: 12px;
+  }
+
+  .rub {
+    font-size: 16px;
+  }
+
+  .rub:before {
+    height: 15px;
+    width: 15px;
+    font-size: 12px;
+  }
+
+  .withdrawButton {
+    margin-top: 5px;
+  }
+
+  .watchAdContainer {
+    padding-top: 8%;
+  }
+
+  .watchAdHeading {
+    font-size: 18px;
+  }
+
+  .watchAd__bonuses {
+    margin-top: 2%;
+    font-size: 12px;
+  }
+
+  .watchAd__buttonWrapper {
+    padding-left: 20px;
+  }
+
+  .watchAdButtonIcon {
+    width: 45px;
+  }
+
+  .corporationHeading {
+    font-size: 24px;
+  }
+  
+  .corporationHeading::before {
+    height: 40px;
+    width: 40px;
+    top: 0;
+    left: -45px;
+  }
+  
+  .corporationDescription {
+    margin-top: -4px;
+    font-size: 12px;
+  }
+  
+  .corporationButton {
+    margin: 0 10%;
+    padding: 0;
+    border: 0;
+    background: transparent;
+  }
+
+  .transfersButton > .content,
+  .withdrawalsButton > .content {
+    font-size: 14px;
+  }
+
+  .transfersButtonText {
+    transform: translateX(5px);
+  }
+  
+  .transfersButtonText::before,
+  .withdrawalsButtonText::before {
+    height: 24px;
+    width: 24px;
+    left: -25px;
+  }
+  
+  .withdrawalsButtonText {
+    transform: translateX(15px);
+  }
+}

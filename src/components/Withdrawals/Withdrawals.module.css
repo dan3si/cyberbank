@@ -1,0 +1,301 @@
+.card {
+  margin: 20px auto 0;
+  max-width: 630px;
+  padding: 16px 12px 200px;
+  background: #1B1F2C;
+  color: #37ECF5;
+  font-family: 'Arial';
+}
+
+.content {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 5%;
+}
+
+.heading {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+  text-shadow: 0px 0px 5px rgba(55, 236, 245, 0.33);
+  text-transform: uppercase;
+  column-gap: 6px;
+}
+
+.backButton {
+	background: transparent;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	transition: 0.2s
+}
+
+.backButton:hover {
+	transform: scale(1.05);
+}
+
+.backButtonIcon {
+	width: 44px;
+	height: 40px;
+}
+
+.section {
+	margin-top: 13px;
+	position: relative;
+}
+
+.sectionBackground {
+  width: 100%;
+  display: block;
+}
+
+.sectionHeading {
+	margin: 0;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	color: #545E7E;
+}
+
+:global(.react-select-container) {
+	margin-top: 3% !important;
+}
+
+:global(.react-select__value-container) {
+	position: static !important;
+}
+
+:global(.react-select__single-value) {
+	color: #545E7E !important;
+}
+
+:global(.react-select__control) {
+	border-radius: 0 !important;
+	background: transparent !important;
+	border: 3px solid #D34E57 !important;
+	box-shadow: 0px 0px 5px #D34E57 !important;
+	min-height: 0 !important;
+	height: 9vw !important;
+	max-height: 40px !important;
+}
+
+:global(.react-select__control:hover) {
+	border-color: #D34E57 !important;
+	box-shadow: 0px 0px 8px #D34E57 !important;
+}
+
+:global(.react-select__placeholder) {
+	color: #545E7E !important;
+  font-size: 14px !important;
+}
+
+:global(.react-select__indicator-separator) {
+	display: none !important;
+}
+
+:global(.react-select__menu) {
+	background-color: #1B1F2C !important;
+}
+
+:global(.react-select__option--is-focused) {
+	background-color: #545E7E !important;
+}
+
+:global(.react-select__option--is-selected) {
+	background-color: transparent !important;
+	color: #D34E57 !important;
+}
+
+:global(.react-select__option--is-selected.react-select__option--is-focused) {
+	background-color: #545E7E !important;
+}
+
+:global(.react-select__indicator) {
+	padding: 0 8px !important;
+}
+
+:global(.react-select__indicator svg) {
+	color: #545E7E !important;
+}
+
+:global(.react-select__indicator svg:hover) {
+	color: #363d54 !important;
+}
+
+.inputWrapper {
+	position: relative;
+}
+
+.input {
+	display: block;
+	margin-top: 3%;
+	width: 100%;
+	box-sizing: border-box;
+	background: transparent;
+	border: 3px solid #D34E57;
+	box-shadow: 0px 0px 5px #D34E57;
+	min-height: 0;
+	height: 9vw;
+	max-height: 40px;
+	color: #545E7E;
+	padding: 0 8px;
+	font-size: 14px;
+	color: #545E7E;
+}
+
+.input:hover {
+	box-shadow: 0px 0px 8px #D34E57;
+}
+
+.input:disabled {
+	border-color: #545E7E;
+	box-shadow: none;
+}
+
+.input:disabled:hover {
+	cursor: not-allowed;
+}
+
+.inputResetButton {
+	display: block;
+	padding: 0;
+	height: 60%;
+	width: calc(10px + 2%);
+	background-color: #FBFBFB;
+	border-radius: 3px;
+	border: none;
+	position: absolute;
+	top: 50%;
+	right: 12px;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+
+.inputResetButton:disabled:hover {
+	cursor: not-allowed;
+}
+
+.inputResetButton:hover > .inputResetButtonMinus {
+	border-color: #545E7E;
+}
+
+.inputResetButton:disabled:hover > .inputResetButtonMinus {
+	border-color: #C8C8C8;
+}
+
+.inputResetButtonMinus {
+	display: block;
+	width: 100%;
+	border: 2px solid #C8C8C8;
+	box-sizing: border-box;
+	transition: 0.1s;
+}
+
+.withdrawButton {
+	display: block;
+	background: transparent;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	margin: 30px auto 0;
+	position: relative;
+	color: #37ECF5;
+	width: 100%;
+	max-width: 245px;
+	transition: 0.2s
+}
+
+.withdrawButtonBackground {
+	width: 100%;
+  display: block;
+}
+
+.withdrawButtonTextWrapper {
+	display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.withdrawButtonText {
+	position: relative;
+	font-size: 16px;
+	transform: translateX(15px);
+}
+
+.withdrawButtonText::before {
+  content: '';
+  display: block;
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  top: 50%;
+  left: -35px;
+  transform: translateY(-45%);
+  background: url('./images/icons/withdraw_button_icon.svg') center / 100%;
+  transition: 0.2s
+}
+
+.withdrawButton:hover .withdrawButtonText::before {
+	transform: translateY(-45%) scale(1.04);
+}
+
+.error {
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	padding-left: 10px;
+	column-gap: 8px;
+	color: #545E7E;
+}
+
+@media (max-width: 500px) {
+	.heading {
+		font-size: 20px;
+	}
+
+	.backButtonIcon {
+		width: 33px;
+		height: 30px;
+	}
+
+	.sectionHeading {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 375px) {
+	.content {
+	  padding: 4% 5%;
+	}
+
+	:global(.react-select__control) {
+		border-width: 2px !important;
+	}
+
+	:global(.react-select-container) {
+		margin-top: 2% !important;
+	}
+
+	:global(.react-select__placeholder) {
+	  font-size: 12px !important;
+	}
+
+	.input {
+		font-size: 11px;
+		border-width: 2px;
+	}
+}
